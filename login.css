@@ -1,9 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    margin: 0 1rem 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    color: #000;
+    padding: 1rem;
+}
+
+li:hover{
+    background-color: blue;
+    transform: rotateZ(45deg);
+    animation-duration: 4s;
+}
+
 legend{
     font-weight: bold;
     font-size: x-large;
 }
 
-img{
+.img{
     margin-bottom: 3rem;
     background-color: white;
     padding: 1rem;
@@ -69,6 +103,19 @@ button:hover{
 
 }
 
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 6rem;
+}
+.Img2{
+    transform: translateX(-100px) translateY(-18px);
+    width: 15rem;
+}
+
+
+
 @keyframes drop{
     0%{transform: translateY(-200px); opacity: 0;}
     100%{transform: translateY(100px); opacity: 1;}
@@ -79,3 +126,16 @@ button:hover{
     100%{transform: translateY(-30px);}
 }
 
+@media (min-width:730px) {
+    footer{
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        height: 15rem;
+    }
+    .Img2{
+        transform: translateX(-200px) translateY(-30px);
+        width: 30rem;
+        margin: 0;
+    }
+}
