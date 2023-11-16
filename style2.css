@@ -13,6 +13,7 @@ img{
 fieldset{
     padding: 2rem;
     border-radius: 2rem;
+    border: 1rem solid white;
 }
 
 .div1{
@@ -37,6 +38,7 @@ input{
 .div2{
     background-color: skyblue;
     border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     border-top-left-radius: 2rem;
 }
 
