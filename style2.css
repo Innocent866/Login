@@ -1,0 +1,79 @@
+legend{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+img{
+    margin-bottom: 3rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+fieldset{
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.div1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    animation-name: drop;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+   
+
+}
+
+input{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.div2{
+    background-color: skyblue;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+button{
+    
+    border: none;
+    font-size: larger;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transform: rotateZ(20deg);
+}
+
+.arrow{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    transform: rotate(270deg);
+    animation-name: arr;
+    animation-duration: 1s ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+   
+
+}
+
+@keyframes drop{
+    0%{transform: translateY(-200px); opacity: 0;}
+    100%{transform: translateY(100px); opacity: 1;}
+}
+
+@keyframes arr{
+    0%{transform: translateY(-70px);}
+    100%{transform: translateY(-30px);}
+}
+
