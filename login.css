@@ -38,7 +38,7 @@ legend{
 }
 
 .img{
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     background-color: white;
     padding: 1rem;
     border-radius: 3rem;
@@ -67,6 +67,7 @@ fieldset{
 input{
     display: flex;
     margin-bottom: 1rem;
+    align-items: center;
 }
 
 .div2{
@@ -77,14 +78,16 @@ input{
 }
 
 button{
-    
+    padding: 1rem;
     border: none;
     font-size: larger;
     border-radius: 1rem;
+    cursor: progress;
 }
 
 button:hover{
-    background-color: black;
+    background-color: blue;
+    padding: 0.5rem;
     color: white;
     transform: rotateZ(20deg);
 }
